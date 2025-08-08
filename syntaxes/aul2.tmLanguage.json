@@ -8,10 +8,6 @@
     {
       "name": "comment.line.double-dash.lua",
       "match": "--.*$"
-    },
-    {
-      "name": "support.function.obj.lua",
-      "match": "\\bobj\\.(draw|load|effect|getvalue|getoption|setoption|setanchor|getaudio|getpixel|pixelshader|rand|mes|clearbuffer|interpolation)\\b"
     }
   ],
   "fileTypes": ["anm2", "obj2", "cam2", "scn2", "tra2"],
