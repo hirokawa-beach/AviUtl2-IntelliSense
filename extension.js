@@ -649,7 +649,7 @@ function activate(context) {
           });
       }
     },
-    '.' 
+    '' 
     )
     );
 

@@ -2,7 +2,7 @@
   "name": "aul2-intellisense",
   "displayName": "AviUtl2 IntelliSense",
   "description": "AviUtl2の設定項目・独自関数を補完し、スクリプトファイル制作を補助します。",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "hirokawa-beach",
   "engines": {
     "vscode": "^1.80.0"
@@ -26,7 +26,7 @@
     "grammars": [
       {
         "language": "lua",
-        "scopeName": "source.lua",
+        "scopeName": "source.aul2.lua",
         "path": "./syntaxes/aul2.tmLanguage.json"
       }
     ],
@@ -36,5 +36,5 @@
         "path": "./snippets/aul2.code-snippets"
       }
     ]
-  }
+    }
 }

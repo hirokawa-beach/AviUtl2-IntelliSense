@@ -1,13 +1,35 @@
 {
-  "scopeName": "source.lua",
+  "scopeName": "source.aul2.lua",
   "patterns": [
     {
-      "name": "keyword.aul2.track",
-      "match": "--(track|check|color|file|font|figure|select|value|label|script|information)@\\w*:"
+      "name": "aul2.settings.lua",
+      "match": "--(?:track|check|color|file|font|figure|select|value|label|script|information)@"
     },
     {
       "name": "comment.line.double-dash.lua",
       "match": "--.*$"
+    },
+    {
+      "name": "aul2.variable.lua",
+      "match": "\\bobj\\.(ox|oy|oz|rx|ry|rz|cx|cy|cz|zoom|alpha|aspect|x|y|z|w|h|screen_w|screen_h|framerate|frame|time|totalframe|totaltime|layer|index|num)\\b"
+    },
+    {
+      "name": "aul2.allfunc-var.lua",
+      "begin": "\\bobj\\.(mes|effect|draw|drawpoly|load|setfont|rand|getoption|getvalue|setanchor|getpixel|pixeloption|getaudio|copybuffer|clearbuffer|getpoint|getinfo|interpolation|rotation|debug_print)\\s*\\(",
+      "beginCaptures": {
+        "1": { "name": "aul2.functions.lua" }
+      },
+      "end": "\\)",
+      "patterns": [
+        {
+          "match": "[^,()\\s][^,()]*",
+          "name": "aul2.variable.inside.lua"
+        }
+      ]
+    },
+    {
+      "name": "aul2.type.lua",
+      "match": "\\\"(?:image|movie|figure|text|framebuffer|tempbuffer|before|culling|billboard|none|add|sub|mul|screen|overlay|light|dark|brightness|chroma|shadow|light_dark|diff|alpha_add|alpha_max|alpha_sub|alpha_add2|drawtarget|draw_state|focus_mode|camera_param|track_mode|section_num|script_name|gui|camera_mode|camera_param|multi_object|line|loop|star|arm|color|inout|xyz|col|rgb|type|index|num|time|accelerate|decelerate|param|link|timecontrol|framerate|script_path|saving)\\\""
     }
   ],
   "fileTypes": ["anm2", "obj2", "cam2", "scn2", "tra2"],
