@@ -1,0 +1,36 @@
+{
+    "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "aul2.settings.lua", //設定項目(--check@など)への着色
+        "settings": {
+          "foreground": "#FF8800"
+        }
+      },
+      {
+        "scope": "aul2.functions.lua", //関数(obj.drawなど)への着色
+        "settings": {
+          "foreground": "#FFD700"
+        }
+      },
+      {
+        "scope": "aul2.variable.lua", //変数(obj.oxなど)への着色
+        "settings": {
+          "foreground": "#87CEFA"
+        }
+      },
+      {
+        "scope": "aul2.variable.inside.lua", //関数内の引数への着色
+        "settings": {
+          "foreground": "#87CEFA"
+        }
+      },
+      {
+        "scope": "aul2.type.lua", //関数内の型("figure"など)への着色
+        "settings": {
+          "foreground": "#228B22"
+        }
+      }
+    ]
+  }
+}

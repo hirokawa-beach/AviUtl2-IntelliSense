@@ -22,14 +22,14 @@
       "end": "\\)",
       "patterns": [
         {
-          "match": "[^,()\\s][^,()]*",
+          "match": "\\\"\\s*(?:image|movie|figure|text|framebuffer|tempbuffer|before|culling|billboard|none|add|sub|mul|screen|overlay|light|dark|brightness|chroma|shadow|light_dark|diff|alpha_add|alpha_max|alpha_sub|alpha_add2|drawtarget|draw_state|focus_mode|camera_param|track_mode|section_num|script_name|gui|camera_mode|camera_param|multi_object|line|loop|star|arm|color|inout|xyz|col|rgb|type|index|num|time|accelerate|decelerate|param|link|timecontrol|framerate|script_path|saving)\\s*\\\"",
+          "name": "aul2.type.lua"
+        },
+        {
+          "match": "(?!\\\")[^,()\\s][^,()]*",
           "name": "aul2.variable.inside.lua"
         }
       ]
-    },
-    {
-      "name": "aul2.type.lua",
-      "match": "\\\"(?:image|movie|figure|text|framebuffer|tempbuffer|before|culling|billboard|none|add|sub|mul|screen|overlay|light|dark|brightness|chroma|shadow|light_dark|diff|alpha_add|alpha_max|alpha_sub|alpha_add2|drawtarget|draw_state|focus_mode|camera_param|track_mode|section_num|script_name|gui|camera_mode|camera_param|multi_object|line|loop|star|arm|color|inout|xyz|col|rgb|type|index|num|time|accelerate|decelerate|param|link|timecontrol|framerate|script_path|saving)\\\""
     }
   ],
   "fileTypes": ["anm2", "obj2", "cam2", "scn2", "tra2"],

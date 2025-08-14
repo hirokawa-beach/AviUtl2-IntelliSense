@@ -1,3 +1,10 @@
 --自分用拡張機能動作確認
 
+--check@ --設定項目
+obj.ox --変数
+obj.draw() --関数
+obj.effect("色調補正","明るさ",150,"色相",180) --関数内の引数
+obj.load("figure","三角形") --関数内の型("figure"など)
 
+--VScodeのsettings.jsonを触る必要があります
+--手順は下記をご覧ください
